@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 class Resultat extends Component {
     render() {
         return (
-            <div>
-                {this.props.text}
+            <div className="result">
+                <span >
+                    {this.props.text}
+                </span>
             </div>
         )
     }

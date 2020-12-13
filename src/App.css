@@ -1,3 +1,24 @@
+html {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-image: url('/img/strangeplanet.png');
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+       on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+       while the background image is loading */
+  background-color: #464646;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +56,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  margin-top: 50px;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+span, #userInput {
+  color: #f8f8f8;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+}
+
+#userInput:focus {
+  outline: none !important;
+  border: 1px solid white;
+  box-shadow: 0 0 10px #A6CDED;
+}
+
+#userInput {
+  border-color: white;
+  border-radius: 5px !important;
+  background-color: transparent!important;
+  backdrop-filter: blur(8px);
+}
+
+button {
+  background-color: transparent;
+}
+
+.result {
+  margin-top: 30px;
+}
+
+.result span {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px !important;
+  box-shadow: 0 0 10px white;
+  filter: grayscale(1);
 }

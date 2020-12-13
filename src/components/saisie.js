@@ -13,7 +13,7 @@ class Saisie extends Component {
     render() {
         return (
             <div>
-                <textarea name="saisie" onChange={this.handleChange} />
+                <textarea id="userInput" name="saisie" onChange={this.handleChange} />
             </div>
         )
     }
