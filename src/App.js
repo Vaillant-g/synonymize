@@ -57,7 +57,7 @@ class App extends Component {
         Yes, this is completely useless. A bit funny, though.</p> */}
         <Saisie
           saveInput={this.saveInput.bind(this)} />
-        <a onClick={this.synonym.bind(this)}>        <h1>Synonymize <i className="fa fa-mouse-pointer" aria-hidden="true"></i></h1> </a>
+        <span onClick={this.synonym.bind(this)}>        <h1>Synonymize <i className="fa fa-mouse-pointer" aria-hidden="true"></i></h1> </span>
         {this.state.displaytext.length > 1 &&
           <Resultat
             text={this.state.displaytext} />
